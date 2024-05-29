@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="848.0" style="-fx-background-color: #F95416;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.labo08.controllers.HelloController">
+   <children>
+      <ImageView fx:id="imgTitleCafeteria" fitHeight="85.0" fitWidth="350.0" layoutX="250.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="apnMenu" layoutX="15.0" layoutY="100.0" prefHeight="370.0" prefWidth="819.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <AnchorPane fx:id="apnCrepado" layoutX="14.0" layoutY="14.0" prefHeight="163.0" prefWidth="392.0" style="-fx-background-color: #FD9330; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="lblTituloCrepado" layoutX="89.0" layoutY="1.0" text="Crepado de papas con queso">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCantidadCrepado" layoutX="71.0" layoutY="48.0" text="Cantidad:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spnCantidadCrepado" layoutX="5.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+                  <ImageView fx:id="imgCrepado" fitHeight="81.0" fitWidth="177.0" layoutX="216.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/capeado.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblSubtotalCrepado" layoutX="74.0" layoutY="112.0" text="SubTotal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubtotalCrepadoNum" layoutX="87.0" layoutY="129.0" text="\$0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPrecioCrepado" layoutX="259.0" layoutY="129.0" text="Precio: $1.25">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apnPolloFrito" layoutX="14.0" layoutY="185.0" prefHeight="163.0" prefWidth="392.0" style="-fx-background-color: #FD9330; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="lblTituloPollo" layoutX="126.0" layoutY="1.0" text="Alas de pollo frito">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spnCantidadPollo" layoutX="5.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Label fx:id="lblCantidadPollo" layoutX="71.0" layoutY="48.0" text="Cantidad:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgPollo" fitHeight="81.0" fitWidth="170.0" layoutX="216.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/pollo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblPrecioPollo" layoutX="259.0" layoutY="129.0" text="Precio: $1.75">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotalPollo" layoutX="74.0" layoutY="112.0" text="SubTotal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotalPolloNum" layoutX="87.0" layoutY="129.0" text="\$0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apnCarne" layoutX="416.0" layoutY="14.0" prefHeight="163.0" prefWidth="392.0" style="-fx-background-color: #FD9330; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="lblTituloCarne" layoutX="92.0" layoutY="1.0" text="Carne de res deshilachada">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCantidadCarne" layoutX="71.0" layoutY="48.0" text="Cantidad:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spnCantidadCarne" layoutX="5.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Label fx:id="lblSubTotalCarne" layoutX="74.0" layoutY="112.0" text="SubTotal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotalCarneNum" layoutX="87.0" layoutY="129.0" text="\$0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgCarne" fitHeight="84.0" fitWidth="170.0" layoutX="216.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/carne.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblPrecioCarne" layoutX="259.0" layoutY="129.0" text="Precio: $2.25">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apnVegetales" layoutX="416.0" layoutY="185.0" prefHeight="163.0" prefWidth="392.0" style="-fx-background-color: #FD9330; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="lblTituloVegetales" layoutX="127.0" layoutY="1.0" text="Vegetales al ajillo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVegetales" fitHeight="81.0" fitWidth="170.0" layoutX="216.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/vegetales.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblPrecioVegetales" layoutX="255.0" layoutY="128.0" text="Precio: $1.75">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spnCantidadVegetales" layoutX="5.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Label fx:id="lblCantidadVegetales" layoutX="71.0" layoutY="48.0" text="Cantidad:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotalVegetales" layoutX="74.0" layoutY="112.0" text="SubTotal:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubTotalVegetalesNum" layoutX="87.0" layoutY="129.0" text="\$0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnTitleCliente" layoutX="15.0" layoutY="477.0" prefHeight="113.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblTipoCliente" layoutX="51.0" layoutY="14.0" text="Tipo Cliente:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbEmpleado" layoutX="57.0" layoutY="48.0" mnemonicParsing="false" text="Empleado">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Cliente" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rbEstudiante" layoutX="57.0" layoutY="72.0" mnemonicParsing="false" text="Estudiante" toggleGroup="$Cliente" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnTipoPago" layoutX="225.0" layoutY="477.0" prefHeight="113.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblFormaPago" layoutX="40.0" layoutY="14.0" text="Forma de Pago">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbEfectivo" layoutX="63.0" layoutY="48.0" mnemonicParsing="false" text="Efectivo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Pago" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rbTarjeta" layoutX="63.0" layoutY="73.0" mnemonicParsing="false" text="Tarjeta" toggleGroup="$Pago" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnCliente" layoutX="432.0" layoutY="477.0" prefHeight="113.0" prefWidth="402.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="txtfNombre" layoutX="164.0" layoutY="8.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label fx:id="lblNombreCliente" layoutX="29.0" layoutY="11.0" text="Nombre del Cliente:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnComprar" layoutX="186.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnComprarAction" style="-fx-background-color: #FF8000;" text="Comprar" textFill="WHITE" />
+            <Button fx:id="btnLimpiar" layoutX="116.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnLimpiarAction" style="-fx-background-color: #FF8000;" text="Limpiar" textFill="WHITE" />
+            <Label fx:id="lblTotal" layoutX="130.0" layoutY="47.0" text="Total:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalNum" layoutX="185.0" layoutY="47.0" text="\$0.00">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
